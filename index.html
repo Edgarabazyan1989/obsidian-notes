@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мои заметки и задачи</title>
+    <title>Заметка</title>
     <link rel="stylesheet" href="стиль.css">
 </head>
 <body>
-    <h1>Мои заметки и задачи</h1>
-    <h2>Заметки</h2>
-    <ul>
-        <li><a href="заметки/заметка1.html">Заметка 1</a></li>
-        <li><a href="заметки/заметка2.html">Заметка 2</a></li>
-        <li><a href="заметки/заметка3.html">Заметка 3</a></li>
-    </ul>
-    <h2>Задачи</h2>
-    <ul>
-        <li><a href="задачи/задача1.html">Задача 1</a></li>
-        <li><a href="задачи/задача2.html">Задача 2</a></li>
-        <li><a href="задачи/задача3.html">Задача 3</a></li>
-    </ul>
+    <div class="obsidian-container">
+        <div class="obsidian-header">
+            <h1>Название заметки</h1>
+            <p>Дата создания: 01.12.2024</p>
+        </div>
+        <div class="obsidian-content">
+            <h2>Раздел 1</h2>
+            <p>Это пример текста. Вы можете добавлять <strong>жирный текст</strong>, <em>курсив</em>, и даже <code>код</code>.</p>
+            
+            <h2>Раздел 2</h2>
+            <ul>
+                <li>Пункт 1</li>
+                <li>Пункт 2</li>
+                <li>Пункт 3</li>
+            </ul>
+            
+            <blockquote>
+                Это цитата. Выглядит красиво.
+            </blockquote>
+
+            <pre><code>
+Пример блока кода:
+console.log('Hello, Obsidian!');
+            </code></pre>
+        </div>
+    </div>
 </body>
 </html>
