@@ -1,78 +1,100 @@
-/* Основной стиль контейнера */
-.obsidian-container {
-    max-width: 800px;
+body {
+    font-family: "Courier New", Courier, monospace;
+    background: #1e1e1e;
+    color: #d4d4d4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
     margin: 0 auto;
     padding: 20px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background: #1e1e1e; /* Темный фон, как в Obsidian */
-    color: #d4d4d4; /* Светлый текст */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Заголовки */
-.obsidian-header h1 {
-    color: #61dafb; /* Цвет акцента */
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
+header {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.obsidian-header p {
-    font-size: 0.9rem;
+header h1 {
+    font-size: 2.5rem;
+    color: #61dafb;
+}
+
+header p {
+    font-size: 1rem;
     color: #aaaaaa;
 }
 
-/* Содержимое */
-.obsidian-content h2 {
-    color: #61dafb;
-    margin-top: 1.5rem;
+section {
+    margin-bottom: 30px;
 }
 
-.obsidian-content p {
-    margin: 1rem 0;
-    line-height: 1.6;
-}
-
-.obsidian-content ul {
-    list-style-type: square;
-    margin-left: 20px;
-}
-
-.obsidian-content li {
-    margin: 5px 0;
-}
-
-/* Цитаты */
-.obsidian-content blockquote {
-    margin: 1rem 0;
-    padding: 1rem;
+.task-creation, .task-list {
     background: #2e2e2e;
-    border-left: 4px solid #61dafb;
-    color: #cccccc;
-    font-style: italic;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Кодовые блоки */
-.obsidian-content pre {
-    background: #2d2d2d;
-    padding: 10px;
-    border-radius: 5px;
-    color: #ffffff;
-    overflow-x: auto;
-}
-
-.obsidian-content code {
-    background: #444444;
-    padding: 2px 4px;
-    border-radius: 3px;
-    color: #ffa500;
-}
-a {
+h2 {
     color: #61dafb;
-    text-decoration: none;
-    transition: color 0.3s ease;
 }
 
-a:hover {
-    color: #ffa500;
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+input, textarea {
+    background: #1e1e1e;
+    color: #d4d4d4;
+}
+
+button {
+    background: #61dafb;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ffa500;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #444;
+    text-align: left;
+}
+
+table th {
+    background: #333;
+    color: #61dafb;
+}
+
+table td {
+    background: #2e2e2e;
+}
+
+.actions button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 0.8rem;
 }
