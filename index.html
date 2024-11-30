@@ -3,35 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Заметка</title>
-    <link rel="stylesheet" href="стиль.css">
+    <title>Управление задачами</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="obsidian-container">
-        <div class="obsidian-header">
-            <h1>Название заметки</h1>
-            <p>Дата создания: 01.12.2024</p>
-        </div>
-        <div class="obsidian-content">
-            <h2>Раздел 1</h2>
-            <p>Это пример текста. Вы можете добавлять <strong>жирный текст</strong>, <em>курсив</em>, и даже <code>код</code>.</p>
-            
-            <h2>Раздел 2</h2>
-            <ul>
-                <li>Пункт 1</li>
-                <li>Пункт 2</li>
-                <li>Пункт 3</li>
-            </ul>
-            
-            <blockquote>
-                Это цитата. Выглядит красиво.
-            </blockquote>
+    <div class="container">
+        <header>
+            <h1>🖥️ Task Manager</h1>
+            <p>Добро пожаловать в вашу систему управления задачами. Стиль: <em>CRM x GitHub x Retro</em>.</p>
+        </header>
+        <main>
+            <section class="task-creation">
+                <h2>Создать задачу</h2>
+                <form id="task-form">
+                    <label for="task-title">Название задачи:</label>
+                    <input type="text" id="task-title" placeholder="Введите название задачи" required>
 
-            <pre><code>
-Пример блока кода:
-console.log('Hello, Obsidian!');
-            </code></pre>
-        </div>
+                    <label for="task-desc">Описание:</label>
+                    <textarea id="task-desc" placeholder="Введите описание"></textarea>
+
+                    <label for="task-responsible">Ответственный:</label>
+                    <input type="text" id="task-responsible" placeholder="Введите имя пользователя">
+
+                    <label for="task-deadline">Срок выполнения:</label>
+                    <input type="date" id="task-deadline" required>
+
+                    <button type="submit">Добавить задачу</button>
+                </form>
+            </section>
+            <section class="task-list">
+                <h2>Список задач</h2>
+                <table id="tasks-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Название</th>
+                            <th>Описание</th>
+                            <th>Ответственный</th>
+                            <th>Срок</th>
+                            <th>Статус</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Задачи будут добавляться сюда -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
